@@ -1,0 +1,166 @@
+*{
+    margin:0;
+    padding:0;
+    box-shadow: border-box;
+}
+:root {
+    --bg: #1a1c20;
+    --main-color: #c71a9c;
+    --main-font-color: #fdfbfb;
+    --sec-font-color: #fcf1b4;
+    --font:'Roboto Mono', monospace;;
+
+}
+
+
+body{
+    background-color: #1a1c20;
+    font-family: var(--font);
+    color:var(--main-font-color);
+    overflow-x: hidden;
+}
+.center{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.nav{
+    justify-content: space-between;
+}
+.nav .logo{
+    border-radius: 15px;
+    background-color: #15161885;
+    font-size: 40px;
+    padding: 40px;
+    width: 20%;
+}
+.nav .links {
+    display: inline-block;
+    padding: 40px;
+}
+.nav .links a {
+    color: var(--main-font-color);
+    text-decoration: none;
+    font-size: 20px;
+    padding: 30px;
+    border-radius: 5px;
+}
+.links a:hover {
+  cursor: pointer;
+  background: #c71a9c;
+  color: white;
+}
+.main{
+    width: 85%;
+    height: 650px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.intro h1{
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+}
+.intro h2{
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+}
+.intro h3{
+    font-family: 'Montserrat', sans-serif;
+    color: grey;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+.intro p{
+    font-family: 'Comic Neue', cursive;
+    font-size: 15px;
+}
+
+.main img{
+    border-radius: 10px;
+    width: 500px;
+    position: absolute;
+    right: 60px;
+    z-index: -1;
+    margin-bottom: 40px;
+    
+}
+.main:before, .main:after{
+    content:'';
+    width: 80%;
+    height: 70%;
+    background: #151618;
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    z-index: -10;
+}
+.main::after{
+    background: #15161890;
+    height: 30%;
+    top: 30px;
+    left: -30%;
+    border-top: 2px solid var(--main-color);
+    border-right: 2px solid var(--main-color);
+}
+
+.About{
+    width: 85%;
+    height: 650px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+/*
+.center {
+  width: 25%;
+  height: 25%;
+  border: 3px solid white;
+  border-radius: 5%;
+  
+}
+
+
+
+
+
+span{
+    font-weight: bold;
+    color:#c71a9c
+}
+section .intro{
+    color: white;
+    text-align: center;
+}
+a{
+
+}
+div.share {
+  background-color: black;
+  padding: 40px 0px;
+  text-align: right;
+  width: 100%;
+}
+
+.share a {
+  background: black;
+  border-radius: 3px;
+  color: white;
+  display: inline-block;
+  margin: 10px;
+  padding: 14px;
+  text-decoration: none;
+
+}
+
+.share a:hover {
+  background: #c71a9c;
+  color: white;
+}*/
+
