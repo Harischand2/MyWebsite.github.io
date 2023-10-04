@@ -25,6 +25,7 @@ body{
     align-items: center;
 }
 
+/* Nav bar */
 .nav{
     justify-content: space-between;
     
@@ -55,6 +56,7 @@ body{
   background: #c71a9c;
   color: white;
 }
+/* Main  */
 .main{
     width: 85%;
     height: 650px;
@@ -113,6 +115,7 @@ body{
     border-right: 2px solid var(--main-color);
 }
 
+/* About */
 .about{
     width: 100%;
     padding: 8em 0;
@@ -143,6 +146,7 @@ body{
 .about .box_wrap .text{
     width: 100%;
     color: grey;
+
 }
 .about .box_wrap .text span{
    font-weight: bold;
@@ -152,11 +156,13 @@ body{
 .about .box_wrap{
     width: 35%;
 }
+
 .skills_box i {
     margin-bottom:  0.5em;
     margin-right:  0.5em;
     color: gray;
 }
+/*   Education  */
 .education{
     width: 100%;
     background: #151618;
@@ -199,7 +205,9 @@ body{
     
 }
 
-
+/* Styling of the elements when the window
+   changes size (width)
+*/
 @media (max-width: 1250px){
     .main img{
         width: 33em;
@@ -215,6 +223,14 @@ body{
         align-items: flex-end;
     }
 }
+/* 
+ When window has <= 1000px then
+ change our row wise nav bar button links
+ to column wise and clip this column  of links
+ into  a button that I reformatted with the
+ font awesome value of '\f0c9' which is a
+ triple line bar icon. 
+ */
 @media (max-width: 1000px){
     .nav .links a {
         font-size: 15px;
@@ -258,6 +274,8 @@ body{
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
         transition: clip-path .4s;
     }
+    /* Style the checked box with the cliped column of links
+       when the box is checked */
     .checkBtn:checked ~ .links{
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
@@ -288,52 +306,4 @@ body{
     
 }
 
-
-
-/*
-.center {
-  width: 25%;
-  height: 25%;
-  border: 3px solid white;
-  border-radius: 5%;
-  
-}
-
-
-
-
-
-span{
-    font-weight: bold;
-    color:#c71a9c
-}
-section .intro{
-    color: white;
-    text-align: center;
-}
-a{
-
-}
-div.share {
-  background-color: black;
-  padding: 40px 0px;
-  text-align: right;
-  width: 100%;
-}
-
-.share a {
-  background: black;
-  border-radius: 3px;
-  color: white;
-  display: inline-block;
-  margin: 10px;
-  padding: 14px;
-  text-decoration: none;
-
-}
-
-.share a:hover {
-  background: #c71a9c;
-  color: white;
-}*/
 
