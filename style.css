@@ -78,7 +78,7 @@ body{
     font-family: 'Montserrat', sans-serif;
     color: grey;
     font-size: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 .intro p{
     font-family: 'Comic Neue', cursive;
@@ -113,15 +113,102 @@ body{
     border-right: 2px solid var(--main-color);
 }
 
+.about{
+    width: 100%;
+    padding: 8em 0;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: start;
+    
+}
+.about .box_wrap{
+    margin: 2em 0;
+}
+.about .box_wrap .heading{
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    position: relative;
+}
+.about .box_wrap .heading::before{
+    content: '';
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    width: 80px;
+    height: 8px;
+    background: #c71a9c;
+    z-index: -1;
+}
+
+.about .box_wrap .text{
+    width: 100%;
+    color: grey;
+}
+.about .box_wrap .text span{
+   font-weight: bold;
+   color: white;
+}
+
+.about .box_wrap{
+    width: 35%;
+}
+.skills_box i {
+    margin-bottom:  0.5em;
+    margin-right:  0.5em;
+    color: gray;
+}
+.education{
+    width: 100%;
+    background: #151618;
+    padding: 5em 0;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.education .left_box{
+    width: 20%;
+}
+.education .left_box .container{
+    margin: 2em 0;
+}
+.education .heading{
+    font-size: 3em;
+}
+.education :is(h3, small, p){
+    margin: 0.5em 0;
+}
+.left_box .container {
+    position: relative;
+}
+.left_box .container::before{
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 100%;
+    background: var(--main-color);
+    left: -20px;
+}
+
+.education :is(small, p){
+    color: grey;
+}
+.education .right_box{
+    width: 40%;
+}
+.education .right_box img{
+    width: 100%;
+    
+}
+
+
 @media (max-width: 1250px){
     .main img{
-        width: 35em;
+        width: 33em;
         right: 0;
     }
 }
-@media (max-width: 1100px){
+@media (max-width: 1200px){
     .main img{
-        width: 35em;
+        width: 31em;
         top: 80px;
     }
     .main {
@@ -136,8 +223,8 @@ body{
 
     .checkBtn{
         display: block;
-        width: 25px;
-        height: 25px;
+        width: 30px;
+        height: 30px;
         margin: 20px;
         cursor: pointer;
         position: relative;
@@ -190,23 +277,18 @@ body{
     .main img{
         width: 28em;
     }
+    .about .box_wrap, .education .left_box, .education .right_box{
+        width: 60%;
+    }
 }
 @media (max-width: 600px){
     .main img{
         width: 22em;
     }
+    
 }
 
 
-
-.About{
-    width: 85%;
-    height: 650px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    position: relative;
-}
 
 /*
 .center {
